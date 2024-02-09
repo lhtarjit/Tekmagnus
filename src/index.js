@@ -2,21 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Sidebar from "./modules/sidebar/sidebar";
-import Topbar from "./modules/topbar/topbar";
 import DashboardComponent from "./modules/dashboard";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
 		<div className="flex w-full h-screen">
-			<div className="w-auto">
-				<Sidebar />
-			</div>
-			<div className="flex flex-col w-full h-full">
-				<Topbar />
-				<DashboardComponent />
-			</div>
+			<DashboardComponent />
 		</div>
 	</React.StrictMode>
 );
